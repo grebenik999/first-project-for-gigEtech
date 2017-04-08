@@ -1,0 +1,255 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-mnu
+		display: none
+		float: right
+		min-width: 285px
+		text-align: center
+		background-color: $overlay-color
+		top: 10px
+		position: absolute
+		right: -23px
+		z-index: 2
+		opacity: .9
+		border-radius: 10px
+		ul
+			li 
+				display: block
+				line-height: 0
+				padding: 0
+			a
+				display: block
+				line-height: 55px
+				font-size: em(16px)
+				padding: 0 15px
+				background-color: transparent
+				transition: all .5s ease
+				&:hover
+					background-color: #273646
+					border-radius: 10px
+	.section_8 .address-logo-wrap .foot-form .footer-submit, .section_8 .s9-stay-in .foot-form .footer-submit
+		margin-left: 0
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)	
+	.section_7
+		.form-section-wrap
+			.brands-right-wrap			
+				a
+					margin: 10px 0 20px 18px
+					max-width: 100px
+					img
+						width: 100%
+			.brands-right-wrapper
+				a
+					margin: 10px 0 20px 18px
+					max-width: 100px
+					img
+						width: 100%
+	.main-mnu
+		right: 0
+	.section_7 .form-section-wrap
+		text-align: center
+	.section_8 .footer-down-line a
+		font-size: em(15px)
+		margin-left: 115px
+	.section_8 .footer-down-line p
+		text-align: center
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header-wrap .owl-controls
+		top: 180%
+	.slider 
+		.owl-controls 
+			.owl-nav
+				top: 83%
+				> div
+					left: 22%
+				.owl-next
+					right: 22%
+	.main-mnu
+		right: 3%
+	.homesect
+		padding-top: 35px
+		.s2-img-wrap
+			padding-bottom: 35px
+	.section_7
+		.form-section-wrap
+			.brands-right-wrap 
+				a
+					margin: 10px 20px 20px 45px
+					max-width: 120px
+					img
+						width: 100%
+			.brands-right-wrapper
+				a
+					margin: 10px 20px 20px 45px
+					max-width: 120px
+					img
+						width: 100%
+	.section_7 .form-section-wrap
+		text-align: center
+	.section_8 .footer-down-line a
+		font-size: em(15px)
+		margin-left: 117px
+	.section_8 .footer-down-line p
+		text-align: center
+		
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	body
+		.btn-up
+			right: 20px
+	.header-wrap .owl-controls
+		top: 170%
+	.slider 
+		.owl-controls 
+			.owl-nav
+				top: 83%
+				> div
+					left: 25%
+				.owl-next
+					right: 25%
+	.section_7
+		.form-section-wrap
+			.brands-right-wrap 
+				a
+					margin: 10px 45px 20px 45px
+					max-width: 100px
+					img
+						width: 100%
+			.brands-right-wrapper
+				a
+					margin: 10px 45px 20px 45px
+					max-width: 100px
+					img
+						width: 100%
+
+	.s2-content-wrap
+		text-align: center
+	.section_7 .form-section-wrap
+		text-align: center
+	.section_8 .footer-down-line a
+		font-size: em(15px)
+		margin-left: 35px
+	.section_8 .footer-down-line p
+		text-align: center
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	body
+		.btn-up
+			right: 20px
+	.header-wrap .owl-controls
+		top: 150%
+	.main-mnu
+		right: 8%
+	.toggle-menu
+		right: 10%
+		top: 1%
+	.s2-content-wrap
+		text-align: center
+	.section_7 .form-section-wrap
+		text-align: center
+	.section_8 .address-logo-wrap .foot-form input, .section_8 .s9-stay-in .foot-form input
+		width: 100%
+	.section_8 .address-logo-wrap .foot-form .footer-submit, .section_8 .s9-stay-in .foot-form .footer-submit
+		margin-top: 15px
+	.section_8 .address-logo-wrap .soc-footer .soc-icon-wrap, .section_8 .s9-stay-in .soc-footer .soc-icon-wrap
+		margin-right: 1px
+	.section_8 .footer-down-line a
+		font-size: em(13px)
+	.section_8 .footer-down-line p
+		text-align: center
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	.main-mnu
+		right: 7%
+	.s2-content-wrap
+		text-align: center
+		p 
+			padding-right: 20px
+	.section_1
+		.content-button
+			text-align: center
+	.s_wrap
+		.s3-item-wrap
+			&:nth-child(6)
+				margin-bottom: 30px
+			h3
+				padding-top: 0
+		.s3-item-text
+			padding-bottom: 10px
+
+	
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	.main-mnu
+		right: 3%
+	.s2-content-wrap
+		text-align: center
+		p 
+			padding-right: 20px
+	.s_wrap .s3-item-wrap 
+    	padding: 15px 100px
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.main-mnu
+		right: 3%
+	.section_1
+		.s2-content-wrap
+			text-align: left
+		.content-button
+			text-align: left
+	.s_wrap 
+		.s3-item-wrap 
+    		padding: 25px 230px
+	
+		
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+ 	.s_wrap
+ 		.s3-item-wrap
+ 			padding: 25px 50px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

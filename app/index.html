@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Tajam</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="57x57-logo" href="img/favicon/57x57-logo.png">
+	<link rel="72x72-logo" sizes="72x72" href="img/favicon/72x72-logo.png">
+	<link rel="114x114-logo" sizes="114x114" href="img/favicon/114x114-logo.png">
+
+	
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>.before,.main-head::before{content:'';width:100%;height:100%;position:absolute;left:0;top:0}.owl-carousel .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{-webkit-transition:height .5s ease-in-out;transition:height .5s ease-in-out}.owl-carousel{display:none;width:100%;-webkit-tap-highlight-color:transparent;position:relative;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-controls .owl-nav .owl-next,.owl-carousel .owl-controls .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-controls .owl-dot{cursor:pointer;cursor:hand;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loaded{display:block}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel .owl-refresh .owl-item{display:none}.owl-carousel .owl-item{position:relative;min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-item img{display:block;width:100%;-webkit-transform-style:preserve-3d}.owl-carousel.owl-text-select-on .owl-item{-webkit-user-select:auto;-moz-user-select:auto;-ms-user-select:auto;user-select:auto}.owl-carousel .owl-grab{cursor:move;cursor:-webkit-grab;cursor:-o-grab;cursor:-ms-grab;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.no-js .owl-carousel{display:block}.owl-carousel .owl-item .owl-lazy{opacity:0;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-item img{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;-webkit-transition:scale .1s ease;transition:scale .1s ease}.owl-carousel .owl-video-play-icon:hover{-webkit-transition:scale(1.3,1.3);transition:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:RobotoRegular,sans-serif;overflow-x:hidden}.preloader{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#fff;z-index:999;background-image:url(../img/preloader.gif);background-repeat:no-repeat;background-position:center}.hidden{display:none}a{color:#fff}a:active,a:focus,a:hover{color:#00e0d0;text-decoration:none}.headers{font-family:RobotoRegular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;text-transform:uppercase;font-weight:400;color:#fff}h1,h2,h3,h4,h5,h6{line-height:1.375em;font-family:PlayfairDisplay-Regular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;text-transform:uppercase;font-weight:700}h1{font-size:2em}h2{font-size:1.75em}h3{font-size:1.375em}b,strong{font-family:PlayfairDisplay-Bold,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-weight:400}.before,.main-head::before{content:'';width:100%;height:100%;position:absolute;left:0;top:0}.trans{-webkit-transition:all .5s ease;transition:all .5s ease}.main-mnu ul,.ulmnu{list-style-type:none;margin:0;padding:0}.main-mnu ul li,.ulmnu li{display:inline-block}.main-head{min-height:620px;background-size:cover;background-position:center;position:relative;padding-bottom:70px}.main-head::before{background-color:#302c51;opacity:.85}.top-line{padding-top:15px;min-height:160px}.logo{padding-top:10px}.logo img{width:139px}.main-mnu{font-size:.8125em;text-transform:uppercase;font-family:RobotoBold}.main-mnu li{line-height:30px;padding:11px}.main-mnu li.active a{color:#00e0d0}.toggle-menu{float:right;position:absolute;right:5%;top:1%;text-align:center;line-height:65px;display:block;width:28px;height:24px;margin:20px auto 0;z-index:1}.toggle-menu span:after,.toggle-menu span:before{content:"";position:absolute;left:0;top:9px}.toggle-menu span:after{top:18px}.toggle-menu span{position:relative;display:block}.toggle-menu span,.toggle-menu span:after,.toggle-menu span:before{width:100%;height:2px;background-color:#fff;-webkit-transition:all .2s;transition:all .2s;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-border-radius:2px;border-radius:2px}.toggle-menu.on span{background-color:transparent}.toggle-menu.on span:before{-webkit-transform:rotate(45deg) translate(-1px,0);-ms-transform:rotate(45deg) translate(-1px,0);transform:rotate(45deg) translate(-1px,0)}.toggle-menu.on span:after{-webkit-transform:rotate(-45deg) translate(6px,-7px);-ms-transform:rotate(-45deg) translate(6px,-7px);transform:rotate(-45deg) translate(6px,-7px)}.toggle-menu.on+#menu{opacity:1;visibility:visible}.header-wrap{margin-top:25px;text-align:center}.header-wrap h1{margin-top:35px;color:#fff;text-transform:none;font-family:PlayfairDisplay-Black;font-size:2.125em;padding-bottom:0;font-weight:700;margin-bottom:0;position:relative}.header-wrap h1::after{position:absolute;content:'';height:2px;width:55px;background-color:#00e0d0;display:block;bottom:-22px;left:50%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0)}.header-wrap p{color:#fff;margin-top:44px;font-family:RobotoLight;font-size:.875em}.header-wrap .owl-controls{text-align:center;position:absolute;top:180%;left:50%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0)}.header-wrap .owl-controls .owl-dot{width:15px;height:15px;margin:0 3px;background-color:none;border:1px #fff solid;display:inline-block;-webkit-border-radius:10em;border-radius:10em}.header-wrap .owl-controls .owl-dot.active{background-color:#00e0d0}.section-bottom{text-align:center}.section-bottom .buttons{position:relative;color:#00e0d0;text-transform:uppercase;font-family:HammersmithOne;font-size:1.125em;display:inline-block;margin-top:50px;margin-bottom:120px;padding:15px 25px;border:1px #00e0d0 solid}.section-bottom .buttons:hover{color:#fff;background:#00e0d0}</style>
+	
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<!-- <script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script> -->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">		
+	</noscript>
+	
+</head>
+
+<body>
+	<div class="preloader"></div>
+	<div id="header-slide">
+		<header class="main-head" style="background-image: url(img/header/header-bg.jpg);">
+			<div class="top-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 col-sm-5">
+							<a href="/" class="logo"><img src="img/header/tajam-logo.png" alt="logo"></a>
+						</div>
+						<div class="col-lg-7 col-md-12">
+							<nav class="main-mnu">
+								<ul>
+									<li class="active"><a href="/">HoME</a></li>
+									<li><a href=".section_1">aBOUT</a></li>
+									<li><a href=".section_3">EXPeRTISE</a></li>
+									<li><a href=".section_4">TEaMS</a></li>
+									<li><a href=".section_5">WoRKS</a></li>
+									<li><a href=".section_6">PEOPLE SaY</a></li>
+									<li><a href=".section_8">CONTaCT</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<a href="" class="toggle-menu hidden-lg">
+				<span></span></a>
+			</div>
+
+			<div class="header-wrap">
+				<div class="container">
+					<div class="row">
+						<div id="slider">
+							<div id="slide">
+								<div class="col-md-12 col-sm-12">
+									<div class="main-header">
+										<h1>We Are Awesome Creative Agency</h1>
+										<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate<br /> cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+									</div>
+								</div>
+							</div>
+							<div id="slide">
+								<div class="col-md-12 col-sm-12">
+									<div class="main-header">
+										<h1>We Are Awesome Creative Agency</h1>
+										<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate<br /> cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+									</div>
+								</div>
+							</div>
+							<div id="slide">
+								<div class="col-md-12 col-sm-12">
+									<div class="main-header">
+										<h1>We Are Awesome Creative Agency</h1>
+										<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate<br /> cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+									</div>
+								</div>
+							</div>
+							<div id="slide">
+								<div class="col-md-12 col-sm-12">
+									<div class="main-header">
+										<h1>We Are Awesome Creative Agency</h1>
+										<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,<br /> lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate<br /> cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="section-bottom">
+					<a href="#" class="buttons">learn more</a>
+				</div>
+			</div>
+		</header>
+	<section class="homesect section_1">
+		<div class="container">
+			<div class="row">
+				<div class="section-head col-md-5 col-sm-5 col-xs-12">
+					<div class="s2-img-wrap">
+						<img src="img/section_1/big-logo.png" alt="image">
+					</div>
+				</div>
+				<div class="section-header col-md-7 col-sm-7 col-xs-12">
+					<div class="s2-content-wrap">
+						<h2>oUR SToRY</h2>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.<br /><br />Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+					</div>
+					<div class="content-button">
+						<a href="#" class="buttons">learn more</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_2" style="background-image: url(img/section_2/sec-2-bg.jpg);">
+		<div class="video-wrap">
+			<button class="btn-play">
+				<img src="img/section_2/icon-play.png" alt="play">
+			</button>
+			<p>WaTCH OUR SToRY</p>
+		</div>			
+	</section>
+
+	<section class="homesect section_3">
+		<div class="container">
+			<div class="row">
+				<div class="section-head col-md-12">
+					<h1>eXPeRTISe</h1>
+					<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+				</div>
+			</div>
+		</div>
+		<div class="s_wrap">
+			<div class="s3-items">
+				<div class="container">
+					<div class="row">
+						<div class="s3-item-wrap col-md-4">
+							<a href="#" class="s3-item">
+								<span class="img-wrap">
+									<img src="img/section_3/item_1.png" alt="Alt">
+								</span>
+								<h3>
+									WEB DESIGN &amp; DEVELOPMENT
+								</h3>
+								<span class="s3-item-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+								</span>
+							</a>
+						</div>
+						<div class="s3-item-wrap col-md-4">
+							<a href="#" class="s3-item">
+								<span class="img-wrap">
+									<img src="img/section_3/item_2.png" alt="Alt">
+								</span>
+								<h3>BRANDING IDENTITY</h3>
+								<span class="s3-item-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+								</span>
+							</a>
+						</div>
+						<div class="s3-item-wrap col-md-4">
+							<a href="#" class="s3-item">
+								<span class="img-wrap">
+									<img src="img/section_3/item_3.png" alt="Alt">
+								</span>
+								<h3>MOBILE APP</h3>
+								<span class="s3-item-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+								</span>
+							</a>
+						</div>
+						<div class="s3-item-wrap col-md-4">
+							<a href="#" class="s3-item">
+								<span class="img-wrap">
+									<img src="img/section_3/item_4.png" alt="Alt">
+								</span>
+								<h3>SEARCH ENGINE OPTIMIZATION</h3>
+								<span class="s3-item-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+								</span>
+							</a>
+						</div>
+						<div class="s3-item-wrap col-md-4">
+							<a href="#" class="s3-item">
+								<span class="img-wrap">
+									<img src="img/section_3/item_5.png" alt="Alt">
+								</span>
+								<h3>GAME DEVELOPMENT</h3>
+								<span class="s3-item-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+								</span>
+							</a>
+						</div>
+						<div class="s3-item-wrap col-md-4">
+							<a href="#" class="s3-item">
+								<span class="img-wrap">
+									<img src="img/section_3/item_6.png" alt="Alt">
+								</span>
+								<h3>MADE WITH LOVE</h3>
+								<span class="s3-item-text">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="homesect section_4" style="background-image: url(img/section_4/sec-4-bg.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="s4-section-head col-md-12">
+					<h1>MEeT oUR AMAZING TeAM</h1>
+					<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+				</div>
+			</div>
+		</div>
+		<div class="team-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="team-member-wrap">
+							<div class="img-member-wrap">
+								<img src="img/section_4/team/1.jpg" alt="team-member">
+							</div>
+							<div class="head-member-wrap">
+								<h3>SeMF UCuK</h3>	
+								<p>CEo &amp; FoUNDER</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="team-member-wrap">
+							<div class="img-member-wrap">
+								<img src="img/section_4/team/2.jpg" alt="team-member">
+							</div>
+							<div class="head-member-wrap">
+								<h3>DIK ADALIN</h3>	
+								<p>ENGINEERING</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="team-member-wrap">
+							<div class="img-member-wrap">
+								<img src="img/section_4/team/3.jpg" alt="team-member">
+							</div>
+							<div class="head-member-wrap">
+								<h3>JENG KOL</h3>	
+								<p>DESIGNER</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="team-member-wrap">
+							<div class="img-member-wrap">
+								<img src="img/section_4/team/4.jpg" alt="team-member">
+							</div>
+							<div class="head-member-wrap">
+								<h3>PET ROMAK</h3>	
+								<p>MARKETING</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="s4-section-bottom">
+				<p>Become part of our dream team, let’s join us !</p>
+				<a href="#" class="buttons">We ARe HiRiNG</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="homesect section_5">
+		<div class="top-line-portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="s5-section-head col-md-6">
+						<h1>oUR WoRKS</h1>
+					</div>
+					<div class="s5-section-link col-md-6">
+						<span><a class="projects" href="#">See All Project in drible <i class="fa fa-chevron-right" aria-hidden="true"></i></a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid gallery_wrapper">
+			<div class="row gallery_wrap">
+				<div class="portfolio-wrap">
+					<a href="img/section_5/big_foto/1.jpg" class="item"><img src="img/section_5/small-foto/1.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/2.jpg" class="item"><img src="img/section_5/small-foto/2.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/3.jpg" class="item"><img src="img/section_5/small-foto/3.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/4.jpg" class="item"><img src="img/section_5/small-foto/4.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/5.jpg" class="item"><img src="img/section_5/small-foto/5.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/6.jpg" class="item"><img src="img/section_5/small-foto/6.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/7.jpg" class="item"><img src="img/section_5/small-foto/7.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/8.jpg" class="item"><img src="img/section_5/small-foto/8.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/9.jpg" class="item"><img src="img/section_5/small-foto/9.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/10.jpg" class="item"><img src="img/section_5/small-foto/10.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/11.jpg" class="item"><img src="img/section_5/small-foto/11.jpg" alt=""></a>
+					<a href="img/section_5/big_foto/12.jpg" class="item"><img src="img/section_5/small-foto/12.jpg" alt=""></a>
+				</div>
+			</div>			
+		</div>
+		<div class="s5-section-bottom">
+			<a href="#" class="buttons">load More</a>
+		</div>
+	</section>
+	<section class="homesect section_6" style="background-image: url(img/section_6/sec-6-bg.jpg">
+		<div class="section-s6">				
+			<div class="slider">
+				<div class="slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 testimonial">
+								<span><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></span>
+								<h5>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</h5>
+								<h6>JaNe GaLaDRIeL</h6>
+								<p>CeO TeNGKUReP</p>
+								<div class="s6-img-wrap">
+									<img src="img/section_6/testimonials/1.jpg" alt="review">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slide">
+					<div class="container">						
+						<div class="row">							
+							<div class="col-md-10 col-md-offset-1 testimonial">								
+								<span><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></span>
+									<h5>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</h5>
+									<h6>John Doe</h6>
+									<p>Web Designer</p>
+									<div class="s6-img-wrap">
+										<img src="img/section_6/testimonials/2.jpg" alt="review">
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 testimonial">
+									<span><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></span>
+									<h5>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</h5>
+									<h6>Jenniffer Doe</h6>
+									<p>Graphic Designer</p>
+									<div class="s6-img-wrap">
+										<img src="img/section_6/testimonials/3.jpg" alt="review">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>				
+		</div>
+	</section>
+
+	<section class="homesect section_7">
+		<div class="form-section-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-s-left">
+							<div class="form-header-wrap">
+								<h1>GIVe US A GooD NeWS</h1>
+							</div>						
+							<form id="form" class="form" method="post">
+								<input type="text" name="name" placeholder="name" required>
+								<input type="mail" name="e-mail" placeholder="E-mail" required>
+								<input type="text" name="subject" placeholder="Subject" required>
+								<textarea type="text" name="mess" placeholder="Message" required></textarea>
+								<div class="content-button">
+									<button name="Send" class="buttons-submit">submit</button>
+								</div>	
+							</form>
+						</div>
+					</div>
+					<div class="form-s-right">
+						<div class="col-md-5 col-md-offset-1">
+							<div class="form-header-wrap">
+								<h1>oUR HAPpY CLIeNT</h1>
+							</div>
+						</div>						
+						<div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12">						
+							<div class="brands-right-wrap">
+								<a href="#"><img src="img/section_7/Zara_Logo.png" alt="zara"></a>
+								<a href="#"><img src="img/section_7/1280px-Barneys_New_York_Logo.png" alt="zara"></a>
+								<a href="#"><img src="img/section_7/Calvin_klein_logo.png" alt="zara"></a>
+								<a href="#"><img src="img/section_7/Converse_logo.png" alt="zara"></a>
+								<a href="#"><img src="img/section_7/1280px-Levi's_logo.png" alt="zara"></a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-12 col-xs-12">
+							<div class="brands-right-wrapper">
+								<a href="#"><img src="img/section_7/Logo_of_Mango_(new).png" alt="mango"></a>
+								<a href="#"><img src="img/section_7/1280px-Gucci_Logo.png" alt="mango"></a>
+								<a href="#"><img src="img/section_7/1280px-Logo_NIKE.png" alt="mango"></a>
+								<a href="#"><img src="img/section_7/Puma_Logo.png" alt="mango"></a>
+								<a href="#"><img src="img/section_7/Billabong.png" alt="mango"></a>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="homesect section_8" style="background-image: url(img/section_9/footer-bg.jpg">
+		<div class="footer-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="s9-footer-logo">
+							<div class="img-logo-wrap">
+								<img src="img/section_9/footer-logo.png" alt="logo">
+							</div>
+							<p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="address-logo-wrap">
+							<h1>OUR STUDIO</h1>
+							<span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+							<p>Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia</p>
+							<span><i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i></span>
+							<span class="tel">(+62) 21-2224 3333</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="s9-stay-in">
+							<h1>STAY IN TOUCH</h1>
+							<div class="foot-form">
+								<form class="form-inline footer-form">
+									<input type="text" name="subform" placeholder="Subscribe our newsletter" required>
+									<button class="footer-submit" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+								</form>
+								
+							</div>
+							<div class="soc-footer">
+								<div class="soc-icon-wrap">
+									<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								</div>
+								<div class="soc-icon-wrap">
+									<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								</div>
+								<div class="soc-icon-wrap">
+									<a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+								</div>
+								<div class="soc-icon-wrap">
+									<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</div>
+								<div class="soc-icon-wrap">
+									<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								</div>
+								<div class="soc-icon-wrap">
+									<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-down-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#">HeLP</a>
+							<a href="#">TeRMS &amp; CONDITION</a>
+							<a href="#">PRIVaCY</a>
+						</div>
+						<div class="col-md-6">
+							<p>Copyright © 2015 - Tajem Creative</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]
+ 
+	<!- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+		{"src" : "libs/magnific-popup/jquery.magnific-popup.min.js", "async" : false},
+		{"src" : "libs/owlcarousel/owl.carousel.min.js", "async" : false},
+		{"src" : "libs/animate/animate-css.js", "async" : false},
+		{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+	
+</body>
+</html>

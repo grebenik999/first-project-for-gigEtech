@@ -1,0 +1,626 @@
+@import "bourbon"
+@import "_vars.sass"
+@import "fonts.sass"
+
+
+//Load Libs SAS
+@import "../app/libs/animate/animate.sass"
+@import "../app/libs/owlcarousel/assets/owl.carousel.sass"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+body
+	.btn-up
+		position: fixed
+		bottom: 50px
+		right: 60px
+		width: 50px
+		height: 50px
+		border-radius: 10em
+		border: 1px solid #fff 
+		background: $overlay-color
+		z-index: 100
+		outline: 0!important
+		transition: .4s ease
+		opacity: 0
+		&:after
+			content: ''
+			width: 10px
+			height: 10px
+			border-top: 2px solid #fff 
+			border-left: 2px solid #fff 
+			transform: rotate(45deg)
+			position: absolute
+			top: 4px
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+		&.active
+			opacity: 1
+			z-index: 100
+
+.homesect
+	min-height: 435px
+	padding-top: 60px
+	background-color: #fff
+	position: relative
+	.s2-img-wrap
+		text-align: center
+		img
+			padding-top: 7px
+	.section-header
+		padding: 0
+		margin: 0
+		.s2-content-wrap
+			max-width: 520px
+			padding-top: 0
+			h2
+				padding-top: 0
+				padding-left: 25px
+				margin-top: 0
+				font-family: "PlayfairDisplayBold"
+				color: $h-color
+				font-size: em(22px)
+			p 
+				color: $h-color
+				font-family: "RobotoLight"
+				font-size: em(14px)
+				padding-left: 25px				
+		.buttons
+			position: relative
+			color: $main-color
+			text-transform: uppercase
+			font-family: "HammersmithOne"
+			font-size: em(18px)
+			display: inline-block
+			margin-top: 35px
+			margin-bottom: 70px
+			margin-left: 25px
+			padding: 15px 25px
+			border: 1px $main-color solid
+			&:hover
+				color: #fff 
+				background: $main-color
+
+.section_2
+	min-height: 562px
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		@extend .before
+		background-color: $overlay-color
+		opacity: .85
+	.video-wrap
+		text-align: center	
+		.btn-play
+			position: relative
+			text-align: center
+			margin-top: 200px
+			padding: 50px 52px
+			background: none
+			border: 2px #fff solid
+			border-radius: 50%
+			&:hover
+				border: 2px $main-color solid
+				background-color: $main-color
+			img
+				position: absolute
+				left: 53%
+				top: 50%
+				transform: translate(-50%, -50%)
+		p 
+			color: #fff
+			position: relative
+			text-transform: uppercase
+			text-align: center
+			font-family: "RobotoBlack"
+			font-size: em(16px)
+			font-weight: bold
+			padding-top: 34px
+			padding-bottom: 140px
+			
+.section-head
+	text-align: center
+	h1
+		font-family: "PlayfairDisplayBold"
+		font-size: em(24px)
+		line-height: 20px
+		color: $h-color
+	p 
+		font-family: "PlayfairDisplayRegular"
+		font-size: em(16px)
+		color: $h-color
+		line-height: 15px
+		margin-bottom: 0
+		animation-delay: .4s
+		&::after
+			position: absolute
+			content: ''
+			height: 2px
+			width: 55px
+			background-color: #c6c4c9
+			display: block
+			bottom: -22px
+			left: 50%
+			transform: translate(-50%, 0) 
+.s_wrap
+	padding-top: 75px
+	.s3-item-wrap
+		padding: 25px 60px
+		text-align: center
+		display: inline-block
+		&:nth-child(6)
+			margin-bottom: 90px
+		opacity: 0
+		transition: all .65s ease
+		transform: translateY(-30px)
+		&.on 
+			opacity: 1
+			transform: translateY(0)
+		h3
+			text-transform: uppercase
+			font-family: "RobotoBlack"
+			font-size: em(14px)
+			color: $h-color
+			padding-top: 30px
+			
+	.s3-item-text
+		text-align: center
+		display: block
+		color: $h-color
+		font-family: "RobotoLight"
+		font-size: em(14px)
+		padding-bottom: 50px
+.img-wrap
+	padding-bottom: 0
+	margin-bottom: 0
+	display: inline-block
+	position: relative
+	img
+ 		max-height: 49px
+ 		max-width 50px
+ 		&:nth-child(2)
+			padding-bottom: 15px
+.section_4
+	min-height: 712px
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		@extend .before
+		background-color: $overlay-color
+		opacity: .85
+.s4-section-head
+	text-align: center
+	h1
+		font-family: "PlayfairDisplayBold"
+		font-size: em(24px)
+		line-height: 20px
+		color: #fff 
+	p 
+		font-family: "PlayfairDisplayRegular"
+		font-size: em(16px)
+		color: #fff 
+		line-height: 15px
+		margin-bottom: 0
+		animation-delay: .4s
+		&::after
+			position: absolute
+			content: ''
+			height: 2px
+			width: 55px
+			background-color: #c6c4c9
+			display: block
+			bottom: -22px
+			left: 50%
+			transform: translate(-50%, 0) 		
+.team-wrapper
+	position: relative
+	padding-top: 80px
+	text-align: center
+	display: block
+	.team-member-wrap
+		margin: 15px 20px
+		padding: 0
+		border: 1px #77748b solid
+		width: 222px
+		display: inline-block
+	.head-member-wrap
+		h3
+			color:#fff 
+			text-transform: uppercase
+			font-family: "RobotoBlack"	
+			font-size: em(16px)
+			padding-top: 25px
+			padding-bottom: 0
+			margin: 0
+		p 
+			color:#fafafa 
+			text-transform: uppercase
+			font-family: "RobotoLight"	
+			font-size: em(13px)
+			padding-top: 0
+			margin: 0 0 20px 0
+.s4-section-bottom
+	padding-top: 65px
+	text-align: center
+	p 
+		color: #f3f3f3
+		font-family: "RobotoLight"
+		font-size: em(14px)
+	.buttons
+		position: relative
+		color: $main-color
+		text-transform: uppercase
+		font-family: "HammersmithOne"
+		font-size: em(18px)
+		display: inline-block
+		margin-top: 30px
+		margin-bottom: 70px
+		padding: 15px 25px
+		border: 1px $main-color solid
+		&:hover
+			color: #fff 
+			background: $main-color
+
+.section_5
+	min-height: 590px
+	background-size: cover
+	background-position: center
+	position: relative
+	.s5-section-head
+		h1 
+			font-family: "PlayfairDisplayBold"
+			color: $h-color
+			font-size: em(24px)
+			text-align: center
+			text-transform: uppercase
+	.s5-section-link
+		padding-top: 20px
+		margin: 0
+		text-align: right
+		position: relative
+		padding-top: 20px	
+		font-family: "RobotoLight"
+		a
+			color: $h-color
+			font-size: em(14px)
+.gallery_wrapper
+	margin-left: 0
+	margin-right: 0
+	padding-left: 0
+	padding-right: 0
+	text-align: center
+	.gallery_wrap
+		padding: 0
+		margin: 0		
+.portfolio-wrap
+	margin: 0
+	padding: 0 0 70px 0
+	.item
+		display: inline-block
+.portfolio-wrap 
+	a 
+		padding: 0
+		margin: 0 -3px
+		width: 227px
+		border: none
+		img
+			max-width: 100%
+.s5-section-bottom
+	text-align: center
+	.buttons
+		position: relative
+		color: $main-color
+		text-transform: uppercase
+		font-family: "HammersmithOne"
+		font-size: em(18px)
+		display: inline-block
+		margin-top: 0
+		margin-bottom: 70px
+		padding: 15px 25px
+		border: 1px $main-color solid
+		&:hover
+			color: #fff 
+			background: $main-color			
+
+.section_6
+	min-height: 500px
+	background-size: cover
+	background-position: center
+	position: relative
+	padding-bottom: 65px
+	&::before
+		@extend .before
+		background-color: $overlay-color
+		opacity: .85
+
+.slider
+	margin-bottom: 25px
+	padding-top: 60px
+	.slide
+		text-align: center
+		color: #fff
+		margin-bottom: 31px
+		position: relative
+		.testimonial
+			display: inline-block
+			font-family: "PlayfairDisplayRegular"
+			font-size: em(18px)
+			text-transform: uppercase
+			h5
+				text-transform: none
+			h6
+				font-family: "RobotoBlack"
+				font-size: em(16px)
+				margin-bottom: 0
+				margin-top: 50px
+				line-height: 15px
+			p 	
+				font-family: "RobotoLight"
+				font-size: em(13px)
+				margin-bottom: 40px
+			.s6-img-wrap
+				width: 102px 
+				height: 102px
+				display: inline-block
+				img
+					width: 100%
+					height: 100%
+					border-radius: 10em
+					overflow: hidden
+					display: inline-block
+	.owl-item
+		.s6-img-wrap, .testimonial, h6, p
+			transition: all 1s ease
+			opacity: 0
+			transform: translate3d(100px, 0, 0)
+		.testimonial, h6
+			transition-delay: .4s
+		p
+			transition-delay: .8s
+
+		&.active
+			.s6-img-wrap, .testimonial,h6, h5, p
+				opacity: 1
+				transform: translate3d(0, 0, 0)
+		
+	.owl-controls
+		text-align: center
+		.owl-dot
+			display: none
+		.owl-nav
+			position: absolute
+			top: 77%
+			width: 100%
+			color: #9f9f9f
+			> div
+				height: 39px
+				width: 16px
+				background-image: url('../img/section_6/slider_arrows.png')
+				background-repeat: no-repeat
+				position: absolute
+				left: 30%
+				opacity: .5
+				transition: all .25s ease
+				&:hover
+					opacity: 1
+			.owl-next
+				right: 30%
+				left: auto
+				background-position: -16px 0	
+
+.section_7
+	min-height: 587px
+	position: relative
+	h1
+		color: $h-color
+		text-align: center
+		font-family: "PlayfairDisplayBold"
+		font-size: em(22px)
+	.form-section-wrap
+		padding-top: 10px
+		margin-bottom: 70px
+		.form-header-wrap
+			h1
+				text-align: left				
+		.form
+			input
+				display: block
+				width: 100%
+				border: 1px #e5e5e5 solid
+				text-indent: 10px
+				padding: 10px 0
+				transition: all .5s ease
+				color: #666
+				font-size: em(14px)
+				font-family: "RobotoLight"
+				text-transform: none
+				margin-bottom: 20px
+			textarea
+				width: 100%
+				height: 200px
+				border: 1px #e5e5e5 solid
+				text-indent: 10px
+				padding: 10px 0
+				transition: all .5s ease
+				color: #666
+				font-size: em(14px)
+				font-family: "RobotoLight"
+				text-transform: none
+				margin-bottom: 20px
+		.buttons-submit
+			position: relative
+			color: $main-color
+			background: none
+			text-transform: uppercase
+			font-family: "HammersmithOne"
+			font-size: em(18px)
+			display: inline-block
+			margin-top: 0
+			margin-bottom: 70px
+			padding: 10px 35px
+			border: 1px $main-color solid
+			&:hover
+				color: #fff 
+				background: $main-color	
+		.brands-right-wrap
+			text-align: center
+			a
+				display: inline-block
+				max-width: 150px
+				margin-top: 10px
+				margin-bottom: 30px
+				img
+					width: 100%
+		.brands-right-wrapper
+			text-align: center
+			a 
+				display: inline-block
+				max-width: 130px
+				margin: 10px 13px 30px 13px
+				img
+					width: 100%
+
+		
+.section_8
+	min-height: 400px
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		@extend .before
+		background-color: $overlay-color
+		opacity: .85
+	.footer-wrap
+		padding-top: 70px
+		.s9-footer-logo
+			p 
+				color: #fff
+				font-family: "RobotoLight"
+				font-size: em(14px)
+				line-height: 30px
+				padding-top: 25px
+				padding-right: 20px
+				text-align: left
+	.footer-down-line
+		padding-top: 75px
+		padding-bottom: 70px
+		a 
+			display: inline-block
+			padding-right: 20px
+			text-transform: uppercase
+			font-family: "RobotoRegular"
+			font-size: em(15px)
+		p 
+			font-family: "RobotoRegular"
+			font-size: em(14px)
+			color: #fff 
+			text-align: right
+	.address-logo-wrap, .s9-stay-in
+		max-width: 320px
+		margin-left: 30px
+		h1
+			color: #fff 
+			font-family: "RobotoBlack"
+			font-size: em(18px)
+			font-weight: bold
+			text-transform: uppercase
+		.fa-map-marker
+			color: #fff 
+			font-size: em(20px)
+			position: absolute
+			padding: 39px 0 0 0;
+		p 
+			color: #fff 
+			font-family: "RobotoLight"
+			font-size: em(14px)
+			line-height: 30px
+			padding: 35px 28px 20px 28px
+			position: relative
+		.fa-phone
+			color: #fff 
+			font-size: em(20px)
+		.tel 
+			color: #fff 
+			font-family: "RobotoLight"
+			font-size: em(14px)
+			line-height: 30px
+			padding-left: 10px
+			padding-top: 15px
+		.foot-form
+			padding-top: 39px
+			input
+				background: none
+				border: 1px #9d97af solid
+				text-indent: 10px
+				padding: 12px 0
+				font-family: "RobotoLight"
+				text-transform: uppercase
+				font-size: em(14px)	
+				width: 73%	
+				color:#fff 	
+			.footer-submit
+				border: none
+				background: rgba(161,154,180,.85)
+				padding: 11px 22px
+				margin: 0 0 0 10px
+				&:hover
+					background: rgba(161,154,180,0)
+					transition: all .5s ease
+					color: #fff 
+				.fa-paper-plane-o
+					font-size: em(22px)
+		.soc-footer
+			padding-top: 26px
+			.soc-icon-wrap
+				text-align: center
+				display: inline-block
+				margin-right: 5px
+				margin-bottom: 5px
+				border: 1px #fff solid
+				border-radius: 10em
+				padding: 4px 9px
+				&:first-child
+					padding: 4px 12px
+				&:nth-child(5)
+					padding: 4px 7px
+				&:nth-child(4)
+					padding: 4px 10px
+
+												
+			
+
+		
+
+
+
+
+
+//ALWAYS END
+@import "media"
